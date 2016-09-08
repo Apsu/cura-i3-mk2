@@ -65,8 +65,13 @@ these higher speeds trying to use the stock profiles.
 
 Gantry Dimensions
 ---
-I decided to pretend the extruder dimensions and gantry calculations didn't exist, so I set the
-relevant values to 0, and set the `machine_use_extruder_offset_to_offset_coords` value to True. In a
-multi-extruder setup or maybe under particular circumstances (idling or wipe towers or whatnot) this
-might be an issue, but until myself or someone else decides to measure the carriage, it seems to be
-working fine.
+I measured the bounding box of the extruder assembly (fans included) as best I could, as well as
+setting the gantry height to my best measurement from the bottom X carriage bar to the nozzle tip.
+These dimensions only matter if you use the "One At A Time" printing mode, but because the gantry
+and extruder assembly are relatively short/large respectively, your print height and model
+clearances will be very constrained. Nonetheless, I believe these values are within a mm or two.
+
+One last thing to consider is that I wasn't able to characterize the impact of the fact this
+extruder assembly has its wiring harness protruding from very near the bottom of the back of
+assembly, which has a high likelihood of crashing into models if approaching them from the front.
+Whether this matters or not is up to you.
