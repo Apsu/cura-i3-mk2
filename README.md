@@ -44,7 +44,10 @@ For the starting gcode, I came up with a mixture of steps to accomplish several 
 
 The ending gcode is pretty stock, probably lifted from Slic3r or Simplify3D.
 
-Nozzle Dimensions
+Gantry Dimensions
 ---
-I decided to pretend the nozzle dimensions and gantry calculations didn't exist, so I set the
-relevant values to 0, and set the `machine_use_extruder_offset_to_offset_coords` value to True.
+I decided to pretend the extruder dimensions and gantry calculations didn't exist, so I set the
+relevant values to 0, and set the `machine_use_extruder_offset_to_offset_coords` value to True. In a
+multi-extruder setup or maybe under particular circumstances (idling or wipe towers or whatnot) this
+might be an issue, but until myself or someone else decides to measure the carriage, it seems to be
+working fine.
