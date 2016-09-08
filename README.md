@@ -29,7 +29,7 @@ defaults, which I have not changed. They are current as of firmware 3.0.8.
 
 Gcode
 ---
-For the starting and ending gcode, I came up with a mixture of steps to accomplish several things:
+For the starting gcode, I came up with a mixture of steps to accomplish several things:
 
 - Most importantly, CuraEngine only uses absolute positioning *and* extruding values. So I use M82
   to set absolute extrusion mode.
@@ -41,6 +41,8 @@ For the starting and ending gcode, I came up with a mixture of steps to accompli
 - Lastly, surrounding the wiping steps are some explicit extrusion distance resets, since we're
   using absolute extrusion now and don't want to confuse the print code since Cura won't know about
   our extrusion for wiping.
+
+The ending gcode is pretty stock, probably lifted from Slic3r or Simplify3D.
 
 Nozzle Dimensions
 ---
