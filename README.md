@@ -2,7 +2,7 @@ OVERVIEW
 ===
 This is a JSON printer definition file for the Original Prusa i3 Mk2, for use with the new Cura 2.3
 beta configuration style. This definition needs to be placed in the `cura/resources/definitions/`
-directory in your Cura 2.3 installation folder.
+directory in your Cura 2.3 installation.
 
 Mac OSX
 ---
