@@ -38,11 +38,25 @@ For the starting gcode, I came up with a mixture of steps to accomplish several 
   codes, it doesn't generate any for you.
 - I added an absolute version of the off-print-area steps to draw two thick lines to "wipe" the nozzle
   and clear off any lingering filament before beginning the print.
+- I chose to perform the Mesh Bed Leveling routine prior to heating the extruder and bed, in hopes
+  of less oozing filament being drug around the bed by leveling after heating completes.
 - Lastly, surrounding the wiping steps are some explicit extrusion distance resets, since we're
   using absolute extrusion now and don't want to confuse the print code since Cura won't know about
   our extrusion for wiping.
 
 The ending gcode is pretty stock, probably lifted from Slic3r or Simplify3D.
+
+Quality Profiles
+---
+Cura 2.3 comes with 3 stock profiles for different print qualities. This definition has nothing to
+do with them except for the initial layer height. However, it can easily be overridden. I thought it
+was reasonable to at least provide a default from the printer that would allow you to print
+successfully with the rest of the stock profile settings unchanged.
+
+One thing to keep in mind, though, is that the speed settings are 30-50% faster than the Slic3r
+profiles. I've had pretty decent results even at the higher speeds, but you might want to turn them
+down or use the "high power" mode through the LCD menu if you experience quality issues at these
+higher speeds. Personally, I like printing faster and my general goal will be to help that to work.
 
 Gantry Dimensions
 ---
