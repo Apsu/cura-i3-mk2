@@ -56,7 +56,7 @@ provide a default from the printer that would allow you to print successfully wi
 stock profile settings unchanged.
 
 I did attempt to translate the main Slic3r profiles into Cura equivalents as well, which are in the
-[quality](/Apsu/cura-i3-mk2/tree/master/quality) directory. There's instructions there for where to
+[quality](quality) directory. There's instructions there for where to
 put the files, as well.
 
 One thing to keep in mind, though, is that the stock profile speed settings are 30-50% faster than
