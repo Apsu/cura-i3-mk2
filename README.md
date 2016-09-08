@@ -1,7 +1,7 @@
 OVERVIEW
 ===
 This a printer definition and set of quality profiles for the Original Prusa i3 Mk2, for use with
-the new Cura 2.3 beta configuration style. This definition needs to be placed in the
+the new Cura 2.3 beta configuration style. The definition needs to be placed in the
 `cura/resources/definitions/` directory in your Cura 2.3 installation.
 
 Please see the [Quality Profiles](#quality-profiles) section for more information on those presets.
@@ -50,19 +50,18 @@ The ending gcode is pretty stock, probably lifted from Slic3r or Simplify3D.
 
 Quality Profiles
 ---
-Cura 2.3 comes with 3 stock profiles for different print qualities. The printer definition has
+Cura 2.3 comes with 3 stock profiles for different print qualities. This printer definition has
 nothing to do with them except for the initial layer height. I thought it was reasonable to at least
 provide a default from the printer that would allow you to print successfully with the rest of the
 stock profile settings unchanged.
 
 I did attempt to translate the main Slic3r profiles into Cura equivalents as well, which are in the
-[quality](quality) directory. There's instructions there for where to
-put the files, as well.
+[quality](quality) directory. There's instructions there for where to put the files, as well.
 
 One thing to keep in mind, though, is that the stock profile speed settings are 30-50% faster than
 the Slic3r profiles. I've had pretty decent results even at the higher speeds, but you might want to
 turn them down or use the "high power" mode through the LCD menu if you experience quality issues at
-these higher speeds.
+these higher speeds trying to use the stock profiles.
 
 Gantry Dimensions
 ---
