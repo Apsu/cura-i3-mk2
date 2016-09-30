@@ -25,9 +25,9 @@ The shared config files are stored in `%AppData%\Local\cura`.
 
 Previous Versions
 ---
-There is a bug in the new 2.x Cura versions where it misbehaves in odd ways if you have the config
-files from the legacy versions of Cura on your system. You *cannot* currently run the legacy Cura,
-then the new Cura, without first removing these old files and reinstalling the new Cura.
+There is a bug in the new 2.x Cura versions where it misbehaves in odd ways if you have the shared
+config files from the legacy versions of Cura on your system. You *cannot* currently run the legacy
+Cura, then the new Cura, without first removing these old files and restarting the new Cura.
 
 Details
 ===
