@@ -6,17 +6,28 @@ the new Cura 2.3 beta configuration style. The definition needs to be placed in 
 
 Please see the [Quality Profiles](#quality-profiles) section for more information on those presets.
 
+
 Mac OSX
 ---
-On Mac OSX this location is found inside the Application Bundle itself, and the cura directory lives
-in `/Applications/Cura.app/Contents/Resources/cura`. Cura must be restarted for the new printer
-definition to be available.
+On Mac OSX this location is found inside the Application Bundle itself, and the resources directory
+lives in `/Applications/Cura.app/Contents/Resources/cura/resources`. Cura must be restarted for the new
+printer definition to be available.
+
+The shared config files are stored in `~/Library/Application Support/cura`.
 
 Windows
 ---
-On Windows this depends on where you installed Cura, but by default is probably in `C:\Program
-Files\Cura\cura`. I'm sure you can find it, and most likely Cura needs to be restarted on Windows as
-well.
+On Windows this location depends on where you installed Cura, but by default it will be located at
+`C:\Program Files\Cura 2.3\resources`. The same applies concerning restarting for the new definition
+to be available.
+
+The shared config files are stored in `%AppData%\Local\cura`.
+
+Previous Versions
+---
+There is a bug in the new 2.x Cura versions where it misbehaves in odd ways if you have the config
+files from the legacy versions of Cura on your system. You *cannot* currently run the legacy Cura,
+then the new Cura, without first removing these old files and reinstalling the new Cura.
 
 Details
 ===
