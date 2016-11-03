@@ -6,5 +6,7 @@ I attempted to recreate the Slic3r quality profiles for Fast, Normal and Detail 
 directory. On Mac OSX, this is located under `~/Library/Application Support/cura/quality`, and I
 suspect on Windows it's under `%AppData%\Local\cura\quality` or similar.
 
+In linux the path is `~/.local/share/cura/quality`
+
 Not all settings translate perfectly but these seem to be just about equivalent. Improvements
 welcome!
